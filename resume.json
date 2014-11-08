@@ -1,0 +1,133 @@
+{
+    "settings": {
+        "icons": false
+    },
+    "firstname": "Paul",
+    "familyname": "Brown",
+    "github_id": "pawl",
+    "bio_data": {
+        "email": "paul90brown@gmail.com",
+        "phone": "+1 (682) 438-5269",
+        "website": "paulsprogrammingnotes.com",
+        "summary": {
+            "points": [
+                "Full-stack developer specializing in Python/PHP on Linux.",
+                "Proficient in Python scripting and data visualization using Javascript."
+            ]
+        },
+        "github_projects": {
+            "details": [
+                {
+                    "project_name": "pawl/CalendarAdmin",
+                    "description": [
+						"Boosts attendance by automatically marketing events with Eventbrite, Meetup, and Google.",
+                        "Implements a submission/approval process for an organization's calendar."
+                    ]
+                },
+                {
+                    "project_name": "pawl/MakerManager",
+                    "description": [
+                        "A web interface for managing RFID badges for an access control system."
+                    ]
+                },
+				{
+                    "project_name": "pawl/Chinese-RFID-Access-Control-Library",
+                    "description": [
+                        "Reverse engineered an access control system and created a Python library.",
+                        "Allows automating the removal of users when they fail to pay their bill."
+                    ]
+                }
+            ]
+        },
+        "skills": {
+            "details": [
+                {
+                    "type": "",
+                    "items": [
+                        ["Python", "PHP", "Javascript", "MySQL", "Git"],
+                        ["Jinja2", "Flask", "SQLAlchemy", "Yii", "Phonegap"],
+						["HTML5", "CSS", "Bootstrap", "jQuery", "Linux (Ubuntu)"]
+					]
+                }
+            ]
+        },
+        "certifications": {
+            "details": [
+                {
+					"type": "",
+                    "items": {
+						"item1": ["CCNA", "MCSE", "CompTIA Security+", "CompTIA Network+", "CompTIA A+"]
+                    }
+                }
+            ]
+        },
+        "experience": {
+            "items": [
+                {
+                    "title": "Engineer I",
+                    "organisation": "Ericsson",
+                    "location": "Plano, TX",
+                    "from": "Aug. 2013",
+                    "to": "Present",
+                    "details": [
+                        "Using Python, Flask, and SQLAlchemy to develop database-driven web applications to provide useful insights from raw data.",
+                        "Building beautiful and functional dashboards using HTML5, CSS, Bootstrap, and Javascript.",
+						"Creating Python tools to automate data aggregation, scraping, and report generation.",
+						"Gathering requirements from engineers and taking ideas from prototype to launch."
+                    ]
+                },
+                {
+                    "title": "Software Development Intern",
+                    "organisation": "Ericsson",
+                    "location": "Plano, TX",
+                    "from": "Aug. 2012",
+                    "to": "Aug. 2013",
+                    "details": [
+                        "Built widely used web application using a web framework (using PHP's Yii).",
+                        "Gained Python experience while creating scripts to automate tasks for network engineers.",
+                        "Learned to use Git and resolve merge conflicts as I worked with other developers.",
+                        "Created an iOS application using Phonegap.",
+                        "Became skilled at creating charts using Javascript charting libraries.",
+                        "Provided Sharepoint support to coworkers."
+                    ]
+                },
+                {
+                    "title": "Software Development Intern",
+                    "organisation": "Delta Steel Technologies",
+                    "location": "Irving, TX",
+                    "from": "Mar. 2012",
+                    "to": "Aug. 2012",
+                    "details": [
+                        "Developed web-based iOS application using PHP, jQuery Mobile, Javascript, HTML5, and Phonegap.",
+                        "Helped to redesign main company website using Wordpress.",
+                        "Built open-source 3d printer to create sales models of company products."
+                    ]
+                }
+            ]
+        },
+        "education": {
+            "schools": [
+                {
+                    "major": "Computer Science",
+                    "institution": "Thomas Edison State College",
+                    "graduation_year": 2013
+                }
+            ]
+        },
+		"volunteer_work": {
+            "items": [
+                {
+                    "title": "Treasurer",
+                    "organisation": "Dallas Makerspace",
+                    "from": "Feb. 2013",
+                    "to": "Current",
+                    "details": [
+                        "Have been handling bookkeeping (Quickbooks), accounting, and billing for the last two years.",
+                        "Wrote most of the software we use on a daily basis.",
+                        "Served on Board of Directors from May 2013 until May 2014."
+                    ]
+                }
+            ]
+        }
+    }
+}
