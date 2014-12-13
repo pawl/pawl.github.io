@@ -108,6 +108,7 @@
         "education": {
             "schools": [
                 {
+                    "degree": "Bachelors",
                     "major": "Computer Science",
                     "institution": "Thomas Edison State College",
                     "graduation_year": 2013
