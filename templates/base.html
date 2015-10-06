@@ -24,11 +24,13 @@
     }
     </style>
   </head>
-  <body id="">
+  <body>
+    {% block body %}
     <div id="site">
       <div id="page-container">
         <div id="page">{% block page %}{% endblock %}</div>
       </div>
     </div>
+    {% endblock %}
   </body>
 </html>
