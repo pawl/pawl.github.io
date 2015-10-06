@@ -1,143 +1,143 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{ firstname }} {{ lastname }}'s Resume</title>
+  <head>
+    <title>{{ firstname }} {{ lastname }}'s Resume</title>
 
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="static/images/resume.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="static/images/resume.png" />
 
-		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="static/css/screen.css" />
-		<link rel="stylesheet" type="text/css" href="static/css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/mobile.css" />
 
-		<style>
-		.table>tbody>tr:first-child>td {
-		    border-top: none;
-		}
+    <style>
+    .table>tbody>tr:first-child>td {
+        border-top: none;
+    }
 
-		#page {
-			border: 1px solid #ccc;
-			box-shadow: 2px 2px 8px #aaa;
-			-webkit-box-shadow: 2px 2px 8px #aaa;
-			-moz-box-shadow: 2px 2px 8px #aaa;
-		}
-		</style>
-	</head>
-	<body id="">
-		<div id="site">
-			<div id="page-container">
-				<div id="page">
-					<div id="top-contact">
-						<div class="contact-details" style="text-align: center;">
-							<a href="mailto:{{ email }}" target="_top">{{ email }}</a><br />
-							{{ phone }}<br />
-							<a href="http://{{website}}"> {{ website }}</a>
-						</div>
-					</div>
+    #page {
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 8px #aaa;
+      -webkit-box-shadow: 2px 2px 8px #aaa;
+      -moz-box-shadow: 2px 2px 8px #aaa;
+    }
+    </style>
+  </head>
+  <body id="">
+    <div id="site">
+      <div id="page-container">
+        <div id="page">
+          <div id="top-contact">
+            <div class="contact-details" style="text-align: center;">
+              <a href="mailto:{{ email }}" target="_top">{{ email }}</a><br />
+              {{ phone }}<br />
+              <a href="http://{{website}}"> {{ website }}</a>
+            </div>
+          </div>
 
-					<h1 class="emphnext">{{ firstname }} {{ lastname }}</h1>
-					<br/><br/>
+          <h1 class="emphnext">{{ firstname }} {{ lastname }}</h1>
+          <br/><br/>
 
-					<h2>Qualifications Summary</h2>
-					<ul>
-						{% for point in summary['points'] %}
-						<li>{{ point }}</li>
-						{% endfor %}
-					</ul>
+          <h2>Qualifications Summary</h2>
+          <ul>
+            {% for point in summary['points'] %}
+            <li>{{ point }}</li>
+            {% endfor %}
+          </ul>
 
-					<h2>Github Projects</h2>
-					<ul>
-					{% for project in github_projects['details'] %}
-						<li><a href="https://github.com/{{ project['project_name'] }}">{{ project['project_name'] }}</a>
-							<ul>
-								{% for line in project['description'] %}
-								<li>{{ line }}</li>
-								{% endfor %}
-							</ul>
-						</li>
-					{% endfor %}
-					</ul>
+          <h2>Github Projects</h2>
+          <ul>
+          {% for project in github_projects['details'] %}
+            <li><a href="https://github.com/{{ project['project_name'] }}">{{ project['project_name'] }}</a>
+              <ul>
+                {% for line in project['description'] %}
+                <li>{{ line }}</li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+          </ul>
 
-					<h2>Technical Skills</h2>
-					<table class="table" style="text-align: center; font-size: 14px;">
-					{% for row in skills['items'] %}
-						<tr>
-							{% for name in row %}
-							<td class="col-md-2">{{ name }}</td>
-							{% endfor %}
-						</tr>
-					{% endfor %}
-					</table>
+          <h2>Technical Skills</h2>
+          <table class="table" style="text-align: center; font-size: 14px;">
+          {% for row in skills['items'] %}
+            <tr>
+              {% for name in row %}
+              <td class="col-md-2">{{ name }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+          </table>
 
-					<h2>Professional Experience</h2>
-					<ul>
-						{% for experience in experience['items'] %}
-						<li>{{ experience['title'] }}, {{ experience['organisation'] }} - {{ experience['location'] }}
-							<span class="right">({{ experience['from'] }} – {{ experience['to'] }})</span>
-							<ul>
-								{% for line in experience['details'] %}
-								<li>{{ line }}</li>
-								{% endfor %}
-							</ul>
-						</li>
-						{% endfor %}
-					</ul>
+          <h2>Professional Experience</h2>
+          <ul>
+            {% for experience in experience['items'] %}
+            <li>{{ experience['title'] }}, {{ experience['organisation'] }} - {{ experience['location'] }}
+              <span class="right">({{ experience['from'] }} – {{ experience['to'] }})</span>
+              <ul>
+                {% for line in experience['details'] %}
+                <li>{{ line }}</li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+          </ul>
 
-					<h2>Volunteer Work</h2>
-					<ul>
-						{% for item in volunteer_work["items"] %}
-						<li>{{ item['title'] }}, {{ item['organisation'] }}
-							<span class="right">({{ item['from'] }} – {{ item['to'] }})</span>
-							<ul>
-								{% for detail in item['details'] %}
-								<li>{{ detail }}</li>
-								{% endfor %}
-							</ul>
-						</li>
-						{% endfor %}
-					</ul>
+          <h2>Volunteer Work</h2>
+          <ul>
+            {% for item in volunteer_work["items"] %}
+            <li>{{ item['title'] }}, {{ item['organisation'] }}
+              <span class="right">({{ item['from'] }} – {{ item['to'] }})</span>
+              <ul>
+                {% for detail in item['details'] %}
+                <li>{{ detail }}</li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+          </ul>
 
-					<h2>Education</h2>
-					<div id="mobile-table">
-						<div class="table-responsive">
-							<table class="table education">
-								<tr>
-									<th>Degree</th><th>Major</th><th>Institution</th><th nowrap>Graduation Year</th>
-								</tr>
-								{% for school in education['schools'] %}
-								<tr>
-									<td>{{ school['degree'] }}</td><td>{{ school['major'] }}</td><td>{{ school['institution'] }}</td><td align="center">{{ school['graduation_year'] }}</td>
-								</tr>
-								{% endfor %}
-							</table>
-						</div>
-					</div>
-					<div id="desktop-table">
-						<table class="table education">
-							<tr>
-								<th>Degree</th><th>Major</th><th>Institution</th><th nowrap>Graduation Year</th>
-							</tr>
-							{% for school in education['schools'] %}
-							<tr>
-								<td>{{ school['degree'] }}</td><td>{{ school['major'] }}</td><td>{{ school['institution'] }}</td><td align="center">{{ school['graduation_year'] }}</td>
-							</tr>
-							{% endfor %}
-						</table>
-					</div>
+          <h2>Education</h2>
+          <div id="mobile-table">
+            <div class="table-responsive">
+              <table class="table education">
+                <tr>
+                  <th>Degree</th><th>Major</th><th>Institution</th><th nowrap>Graduation Year</th>
+                </tr>
+                {% for school in education['schools'] %}
+                <tr>
+                  <td>{{ school['degree'] }}</td><td>{{ school['major'] }}</td><td>{{ school['institution'] }}</td><td align="center">{{ school['graduation_year'] }}</td>
+                </tr>
+                {% endfor %}
+              </table>
+            </div>
+          </div>
+          <div id="desktop-table">
+            <table class="table education">
+              <tr>
+                <th>Degree</th><th>Major</th><th>Institution</th><th nowrap>Graduation Year</th>
+              </tr>
+              {% for school in education['schools'] %}
+              <tr>
+                <td>{{ school['degree'] }}</td><td>{{ school['major'] }}</td><td>{{ school['institution'] }}</td><td align="center">{{ school['graduation_year'] }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+          </div>
 
-					<h2>IT Certifications</h2>
-					<div style="text-align: center;">
-					{% for row in certifications['items'] %}
-						{% for name in row %}
-						<span class="label label-default">{{ name }}</span>
-						{% endfor %}
-					{% endfor %}
-					</div>
-				</div><!-- End Page -->
-			</div>
-		</div>
-	</body>
+          <h2>IT Certifications</h2>
+          <div style="text-align: center;">
+          {% for row in certifications['items'] %}
+            {% for name in row %}
+            <span class="label label-default">{{ name }}</span>
+            {% endfor %}
+          {% endfor %}
+          </div>
+        </div><!-- End Page -->
+      </div>
+    </div>
+  </body>
 </html>
 
 
