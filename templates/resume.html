@@ -14,61 +14,61 @@
 
 <h2>Qualifications Summary</h2>
 <ul>
-  {% for point in summary['points'] %}
+  {%- for point in summary['points'] %}
   <li>{{ point }}</li>
-  {% endfor %}
+  {%- endfor %}
 </ul>
 
 <h2>Github Projects</h2>
 <ul>
-{% for project in github_projects['details'] %}
+{%- for project in github_projects['details'] %}
   <li><a href="https://github.com/{{ project['project_name'] }}">{{ project['project_name'] }}</a>
     <ul>
-      {% for line in project['description'] %}
+      {%- for line in project['description'] %}
       <li>{{ line }}</li>
-      {% endfor %}
+      {%- endfor %}
     </ul>
   </li>
-{% endfor %}
+{%- endfor %}
 </ul>
 
 <h2>Technical Skills</h2>
 <table class="table" style="text-align: center; font-size: 14px;">
-{% for row in skills['items'] %}
+{%- for row in skills['items'] %}
   <tr>
-    {% for name in row %}
+    {%- for name in row %}
     <td class="col-md-2">{{ name }}</td>
-    {% endfor %}
+    {%- endfor %}
   </tr>
-{% endfor %}
+{%- endfor %}
 </table>
 
 <h2>Professional Experience</h2>
 <ul>
-  {% for experience in experience['items'] %}
+  {%- for experience in experience['items'] %}
   <li>{{ experience['title'] }}, {{ experience['organisation'] }} - {{ experience['location'] }}
     <span class="right">({{ experience['from'] }} – {{ experience['to'] }})</span>
     <ul>
-      {% for line in experience['details'] %}
+      {%- for line in experience['details'] %}
       <li>{{ line }}</li>
-      {% endfor %}
+      {%- endfor %}
     </ul>
   </li>
-  {% endfor %}
+  {%- endfor %}
 </ul>
 
 <h2>Volunteer Work</h2>
 <ul>
-  {% for item in volunteer_work["items"] %}
+  {%- for item in volunteer_work["items"] %}
   <li>{{ item['title'] }}, {{ item['organisation'] }}
     <span class="right">({{ item['from'] }} – {{ item['to'] }})</span>
     <ul>
-      {% for detail in item['details'] %}
+      {%- for detail in item['details'] %}
       <li>{{ detail }}</li>
-      {% endfor %}
+      {%- endfor %}
     </ul>
   </li>
-  {% endfor %}
+  {%- endfor %}
 </ul>
 
 <h2>Education</h2>
@@ -78,11 +78,11 @@
       <tr>
         <th>Degree</th><th>Major</th><th>Institution</th><th nowrap>Graduation Year</th>
       </tr>
-      {% for school in education['schools'] %}
+      {%- for school in education['schools'] %}
       <tr>
         <td>{{ school['degree'] }}</td><td>{{ school['major'] }}</td><td>{{ school['institution'] }}</td><td align="center">{{ school['graduation_year'] }}</td>
       </tr>
-      {% endfor %}
+      {%- endfor %}
     </table>
   </div>
 </div>
@@ -91,21 +91,21 @@
     <tr>
       <th>Degree</th><th>Major</th><th>Institution</th><th nowrap>Graduation Year</th>
     </tr>
-    {% for school in education['schools'] %}
+    {% for school in education['schools'] -%}
     <tr>
       <td>{{ school['degree'] }}</td><td>{{ school['major'] }}</td><td>{{ school['institution'] }}</td><td align="center">{{ school['graduation_year'] }}</td>
     </tr>
-    {% endfor %}
+    {%- endfor %}
   </table>
 </div>
 
 <h2>IT Certifications</h2>
 <div style="text-align: center;">
-{% for row in certifications['items'] %}
-  {% for name in row %}
+{%- for row in certifications['items'] %}
+  {%- for name in row %}
   <span class="label label-default">{{ name }}</span>
-  {% endfor %}
-{% endfor %}
+  {%- endfor %}
+{%- endfor %}
 </div>
 {% endblock %}
 
