@@ -1,8 +1,7 @@
-click==6.7
-Flask==0.12
-Frozen-Flask==0.13
-itsdangerous==0.24
-Jinja2==2.9.5
-MarkupSafe==0.23
-Werkzeug==0.11.15
-wheel==0.24.0
+click==7.1.2
+Flask==1.1.2
+Frozen-Flask==0.15
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+Werkzeug==1.0.1
