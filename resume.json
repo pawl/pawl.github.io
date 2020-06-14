@@ -2,68 +2,70 @@
     "firstname": "Paul",
     "lastname": "Brown",
     "github_id": "pawl",
-    "email": "paul90brown@gmail.com",
+    "email": "paul90brown+resume@gmail.com",
     "phone": "+1 (817) 382-9696",
     "website": "paulsprogrammingnotes.com",
     "summary": {
         "points": [
-            "Full-stack developer specializing in data-driven Python web applications."
+            "Full-stack developer specializing in data-driven Python & Javascript web applications."
         ]
     },
     "github_projects": {
         "details": [
             {
-                "project_name": "flask-admin/flask-admin",
+                "project_name": "pawl/heckingoodboys",
+                "website": "heckingoodboys.com",
                 "description": [
-                    "Flexible framework for quickly building web interfaces for database models.",
-                    "Currently a project maintainer and contributor."
-                ]
-            },
-            {
-                "project_name": "pawl/MakerManager2",
-                "description": [
-                    "A web interface for managing RFID badges for an access control system."
-                ]
-            },
-            {
-                "project_name": "pawl/CalendarAdmin",
-                "description": [
-                    "Implements a submission/approval process for an organization's calendar.",
-                    "Boosts attendance by automatically marketing events with Eventbrite, Meetup.com, and Google Calendar."
-                ]
-            },
-            {
-                "project_name": "pawl/Chinese-RFID-Access-Control-Library",
-                "description": [
-                    "Reverse engineered an access control system and created a Python library.",
-                    "Allows automating the removal of users when they fail to pay their bill."
+                    "A regularly updated slideshow with some of the most wonderful dog pictures."
                 ]
             }
         ]
     },
     "skills": {
         "items": [
-            ["Python", "PHP", "Javascript", "MySQL", "Git"],
-            ["Jinja2", "Flask", "SQLAlchemy", "Docker", "Pentaho Kettle"],
-            ["HTML5", "CSS", "Bootstrap", "jQuery", "Linux (Ubuntu)"]
+            ["Python", "Javascript", "Django", "Flask", "Vue.js"],
+            ["Docker", "MySQL", "MongoDB", "PostgreSQL", "Linux"],
+            ["PHP", "SQLAlchemy", "jQuery", "Bootstrap", "Jinja2"]
         ]
     },
     "certifications": {
         "items": [
-            ["CCNA", "MCSE", "CompTIA Security+", "CompTIA Network+", "CompTIA A+"]
+            ["MCSE", "CompTIA Security+", "CompTIA Network+", "CompTIA A+", "CCNA (Expired Dec, 2016)"]
         ]
     },
     "experience": {
         "items": [
             {
-                "title": "Senior Developer",
-                "organisation": "Rewardstyle",
+                "title": "Full-Stack Engineer",
+                "organisation": "Bloodbuy.com",
                 "location": "Dallas, TX",
-                "from": "Mar. 2015",
+                "from": "Jan. 2018",
                 "to": "Present",
                 "details": [
-                    "Responsible for developing and maintaining ETL pipelines for the company's product catalog.",
-                    "Assisting with on-boarding, code review, and bug fixes to legacy software."
+                    "Built well-tested features for a built-from-scratch Django e-commerce marketplace.",
+                    "Improved application performance by simplifying database schema and reducing query counts.",
+                    "Developed ETL pipeline for getting delivery data from carriers.",
+                    "Improved e-mail template browser compatibility with MJML.",
+                    "Improved organization security by implementing password manager and improving network security.",
+                    "Dockerized application and moved testing from Jenkins to CircleCI.",
+                    "Deployed software using Heroku."
+                ]
+            },
+            {
+                "title": "Senior Software Engineer",
+                "organisation": "rewardStyle",
+                "location": "Dallas, TX",
+                "from": "Mar. 2015",
+                "to": "Jan. 2018",
+                "details": [
+                    "Built RESTful API using Python, Flask, and SQLAlchemy for the launch of the LIKEtoKNOW.it mobile app.",
+                    "Improved caching, performance, and scalability of LIKEtoKNOW.it.",
+                    "Used Docker to containerize applications.",
+                    "Built microservices using the Apache Thrift RPC framework.",
+                    "Developed ETL pipelines to upsert 30+ million rows into a MySQL database daily.",
+                    "Improved accuracy of customer facing analytics.",
+                    "Assisted with engineer onboarding, code review, and bug fixes to Node.js, PHP, and Python software.",
+                    "Deployed software on AWS infrastructure using Ansible."
                 ]
             },
             {
@@ -76,7 +78,7 @@
                     "Won an Ericsson PRIDE Award in the category of Processes & Tools. One of only 29 employees (out of approx. 8,000) to receive this award.",
                     "Used Python, Flask, and SQLAlchemy to develop database-driven web applications to provide useful insights from raw data.",
                     "Created Python tools to automate data aggregation, scraping, and report generation.",
-                    "Gathering requirements from engineers and taking ideas from prototype to launch."
+                    "Gathered requirements from engineers and took ideas from prototype to launch."
                 ]
             },
             {
@@ -95,7 +97,7 @@
                 ]
             },
             {
-                "title": "Software Development Intern",
+                "title": "Intern",
                 "organisation": "Delta Steel Technologies",
                 "location": "Irving, TX",
                 "from": "Mar. 2012",
@@ -113,7 +115,7 @@
             {
                 "degree": "Bachelors",
                 "major": "Computer Science",
-                "institution": "Thomas Edison State College",
+                "institution": "Thomas Edison State University",
                 "graduation_year": 2013
             }
         ]
