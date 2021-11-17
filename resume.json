@@ -28,19 +28,30 @@
             ["PHP", "SQLAlchemy", "jQuery", "Bootstrap", "Jinja2"]
         ]
     },
-    "certifications": {
-        "items": [
-            ["MCSE", "CompTIA Security+", "CompTIA Network+", "CompTIA A+", "CCNA (Expired Dec, 2016)"]
-        ]
-    },
     "experience": {
         "items": [
+            {
+                "title": "Software Engineer",
+                "organisation": "Doctor On Demand",
+                "location": "Remote",
+                "from": "July 2020",
+                "to": "Present",
+                "details": [
+                    "Worked on the Platform Engineering team to improve shared code and overall reliability of the company's Django telemedicine platform.",
+                    "Helped improve CI build pipeline speed by more than 300%.",
+                    "Helped containerize application and improved deployment speed.",
+                    "Migrated from Python 2.7 to 3.7 and Django 1.11 to 3.2.",
+                    "Improved Mypy (type hinting) implementation and used it to find bugs.",
+                    "Improved application performance by reducing query counts and adding missing database indexes.",
+                    "Implemented Sentry for error monitoring and used it to catch bugs early in the development process."
+                ]
+            },
             {
                 "title": "Full-Stack Engineer",
                 "organisation": "Bloodbuy.com",
                 "location": "Dallas, TX",
                 "from": "Jan. 2018",
-                "to": "Present",
+                "to": "June 2020",
                 "details": [
                     "Built well-tested features for a built-from-scratch Django e-commerce marketplace.",
                     "Improved application performance by simplifying database schema and reducing query counts.",
@@ -94,18 +105,6 @@
                     "Created an iOS application using Phonegap.",
                     "Became skilled at creating charts using Javascript charting libraries.",
                     "Provided Sharepoint support to coworkers."
-                ]
-            },
-            {
-                "title": "Intern",
-                "organisation": "Delta Steel Technologies",
-                "location": "Irving, TX",
-                "from": "Mar. 2012",
-                "to": "Aug. 2012",
-                "details": [
-                    "Developed web-based iOS application using PHP, jQuery Mobile, Javascript, HTML5, and Phonegap.",
-                    "Helped to redesign main company website using Wordpress.",
-                    "Built open-source 3D printer to create sales models of company products."
                 ]
             }
         ]

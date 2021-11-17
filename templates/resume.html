@@ -110,13 +110,4 @@
     {%- endfor %}
   </table>
 </div>
-
-<h2>IT Certifications</h2>
-<div style="text-align: center;">
-{%- for row in certifications['items'] %}
-  {%- for name in row %}
-  <span class="label label-default">{{ name }}</span>
-  {%- endfor %}
-{%- endfor %}
-</div>
 {% endblock %}
