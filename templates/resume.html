@@ -46,7 +46,7 @@
 <h2>Professional Experience</h2>
 <ul>
   {%- for experience in experience['items'] %}
-  <li>{{ experience['title'] }}, {{ experience['organisation'] }} - {{ experience['location'] }}
+  <li>{{ experience['title'] }}, {{ experience['organisation'] }}{%- if experience['location'] %} - {% endif %}{{ experience['location'] }}
     <span class="right">({{ experience['from'] }} – {{ experience['to'] }})</span>
     <ul>
       {%- for line in experience['details'] %}
