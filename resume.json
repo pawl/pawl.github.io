@@ -31,19 +31,19 @@
     "experience": {
         "items": [
             {
-                "title": "Software Engineer",
-                "organisation": "Doctor On Demand",
+                "title": "Senior Software Engineer",
+                "organisation": "Included Health (Doctor On Demand)",
                 "location": "Remote",
                 "from": "July 2020",
                 "to": "Present",
                 "details": [
-                    "Worked on the Platform Engineering team to improve shared code and overall reliability of the company's Django telemedicine platform.",
+                    "Worked on the Platform Engineering team to improve infrastructure and shared code to improve reliability of the company's Django telemedicine platform.",
                     "Helped improve CI build pipeline speed by more than 300%.",
-                    "Helped containerize application and improved deployment speed.",
-                    "Migrated from Python 2.7 to 3.7 and Django 1.11 to 3.2.",
+                    "Helped containerize application and improve deployment speed.",
+                    "Improved test coverage and migrated large codebase from Python 2.7 to 3.8 and Django 1.11 to 3.2.",
                     "Improved Mypy (type hinting) implementation and used it to find bugs.",
                     "Improved application performance by reducing query counts and adding missing database indexes.",
-                    "Implemented Sentry for error monitoring and used it to catch bugs early in the development process."
+                    "Implemented Sentry error monitoring and used it to catch bugs early in the development process."
                 ]
             },
             {
